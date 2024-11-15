@@ -1,0 +1,48 @@
+trends_by_year:
+    model: imdb.trends_by_year
+    inputs:
+      imdb.netflix:
+        rows:
+        - title: "The Deliverance"
+          type: movie
+          genres: "Horror, Thriller"
+          releaseYear: 2024
+          imdbId: tt4196566
+          imdbAverageRating: 5.1
+          imdbNumVotes: 19656
+          availableCountries: "AT, CH, DE"
+        - title: "Winnie the Pooh: Blood and Honey 2"
+          type: movie
+          genres: "Horror, Thriller"
+          releaseYear: 2024
+          imdbId: tt23330554
+          imdbAverageRating: 4.7
+          imdbNumVotes: 9774
+          availableCountries: "AT, CH, DE"
+        - title: "Rebel Ridge"
+          type: movie
+          genres: "Action, Crime, Drama"
+          releaseYear: 2024
+          imdbId: tt11301886
+          imdbAverageRating: 6.8
+          imdbNumVotes: 66663
+          availableCountries: "AT, CH, DE"
+    outputs:
+      query:
+        rows:
+        - genre: Horror
+          releaseYear: 2024
+          counter: 2
+        - genre: Thriller
+          releaseYear: 2024
+          counter: 2
+        - genre: Action
+          releaseYear: 2024
+          counter: 1
+        - genre: Crime
+          releaseYear: 2024
+          counter: 1
+        - genre: Drama
+          releaseYear: 2024
+          counter: 1
+  

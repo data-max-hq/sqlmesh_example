@@ -1,0 +1,118 @@
+trends_by_country:
+    model: imdb.trends_by_country
+    inputs:
+      imdb.netflix:
+        rows:
+        - title: "The Deliverance"
+          type: movie
+          genres: "Horror, Thriller"
+          releaseYear: 2024
+          imdbId: tt4196566
+          imdbAverageRating: 5.1
+          imdbNumVotes: 19656
+          availableCountries: "AT, DE"
+        - title: "Winnie the Pooh: Blood and Honey 2"
+          type: movie
+          genres: "Horror, Thriller"
+          releaseYear: 2024
+          imdbId: tt23330554
+          imdbAverageRating: 4.7
+          imdbNumVotes: 9774
+          availableCountries: "DE"
+        - title: "Rebel Ridge"
+          type: movie
+          genres: "Action, Crime, Drama"
+          releaseYear: 2024
+          imdbId: tt11301886
+          imdbAverageRating: 6.8
+          imdbNumVotes: 66663
+          availableCountries: "AT, DE"
+    outputs:
+      ctes:
+        netflix:
+          rows:
+            - genre: Action
+              releaseYear: 2024
+              country: AT
+            - genre: Action
+              releaseYear: 2024
+              country: DE
+            - genre: Crime
+              releaseYear: 2024
+              country: AT
+            - genre: Crime
+              releaseYear: 2024
+              country: DE
+            - genre: Drama
+              releaseYear: 2024
+              country: AT
+            - genre: Drama
+              releaseYear: 2024
+              country: DE
+            - genre: Thriller
+              releaseYear: 2024
+              country: AT
+            - genre: Thriller
+              releaseYear: 2024
+              country: DE
+            - genre: Horror
+              releaseYear: 2024
+              country: AT
+            - genre: Horror
+              releaseYear: 2024
+              country: DE
+            - genre: Horror
+              releaseYear: 2024
+              country: DE
+            - genre: Thriller
+              releaseYear: 2024
+              country: DE
+
+      query:
+        rows:
+          - genre: Action
+            releaseYear: 2024
+            country: AT
+            counter: 1
+          - genre: Action
+            releaseYear: 2024
+            country: DE
+            counter: 1
+          - genre: Crime
+            releaseYear: 2024
+            country: AT
+            counter: 1
+          - genre: Crime
+            releaseYear: 2024
+            country: DE
+            counter: 1
+          - genre: Drama
+            releaseYear: 2024
+            country: AT
+            counter: 1
+          - genre: Horror
+            releaseYear: 2024
+            country: DE
+            counter: 2
+          - genre: Thriller
+            releaseYear: 2024
+            country: DE
+            counter: 2
+          - genre: Horror
+            releaseYear: 2024
+            country: AT
+            counter: 1
+          - genre: Thriller
+            releaseYear: 2024
+            country: AT
+            counter: 1
+
+
+          - genre: Drama
+            releaseYear: 2024
+            country: DE
+            counter: 1
+
+
+
+  

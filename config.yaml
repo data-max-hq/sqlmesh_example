@@ -1,0 +1,23 @@
+# The gateways key takes dictionaries as values,
+# and each gateway dictionary contains one or more connection dictionaries.
+# Gateway dictionaries can contain multiple connection dictionaries if different SQLMesh components
+# should use different connections (e.g., SQLMesh tests should run in a different database than SQLMesh plans).
+gateways:
+  local:
+    connection:
+      type: duckdb
+      database: sqlmesh.db
+    state_connection:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: sqlmesh
+      password: sqlmesh
+      database: sqlmesh
+
+# The default_gateway key specifies the default gateway SQLMesh should use when executing commands.
+default_gateway: local
+
+# Model specific configuration like table format, SQL dialect, start date for backfill etc.
+model_defaults:
+  dialect: spark2
