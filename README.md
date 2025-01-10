@@ -79,3 +79,5 @@ duckdb sqlmesh.db "SELECT * FROM imdb.netflix"
 duckdb sqlmesh.db "SELECT * FROM imdb.trends_by_year"
 duckdb sqlmesh.db "SELECT * FROM imdb.trends_by_country"
 ```
+
+Made with ❤️ by [datamax.ai](https://www.datamax.ai/).
